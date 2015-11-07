@@ -1,0 +1,32 @@
+
+body {
+    background-color: #0D0D0D;
+    background-image: url("/static/bg.gif");
+    color: whitesmoke;
+}
+
+.my-content {
+    background-color: #0D0D0D;
+    padding: 20px 5% 20px 5%;
+    margin: 20px 10px 20px 10px;
+}
+
+#submit {
+    color: black;
+}
+
+#password {
+    color: #0D0D0D;
+    background-color: whitesmoke;
+}
+
+pre {
+    text-align: left;
+    white-space: pre-line;
+}
+
+textarea {
+    width: 90%;
+    color: #0D0D0D;
+    background-color: whitesmoke;
+}

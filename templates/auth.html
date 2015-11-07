@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block my_content %}
+    <h1>hello</h1>
+    <form method="POST" action="/secret/{{ secret_id }}">
+        {{ form.hidden_tag() }}
+        {{ form.password.label }}{{ form.password() }}
+        {{ form.submit() }}
+    </form>
+{% endblock %}

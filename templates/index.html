@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block my_content %}
+    <h1>Share a secret</h1>
+    <p>Safely share a secret.</p>
+    <form method="POST" action="/">
+        {{ form.hidden_tag() }}
+        {{ form.secret_text.label }}<br />{{ form.secret_text(rows="20", cols="100") }}<br/><br />
+        {{ form.password.label }}<br />{{ form.password() }}<br /><br />
+        {{ form.submit }}
+    </form><br /><br />
+    <h2>How it works</h2>
+    <p>Enter the secret you wish to share in the field labeled 'Your secret'. After submitting it you will be provided a link that you will be able to give to the person you are trying to share the secret with. Be careful, these secrets are only accessible once. Which means that once the recipient (or you) access the secret the secret will be deleted, never to be seen again.</p>
+    <p>Passwords for the extra paranoid. The urls provided are randomly generated, 80 character strings. The odds of somebody stumbling upon your secret are pretty slim. However, I do provide the ability to add an optional password. This makes it so the recipient will have to enter the password you set to be able to see the secret. Like mentioned previously, once the secret is accessed it will be deleted.</p>
+    <p>One last thing to note. Secrets only live for 7 days. After that they will be deleted.</p>
+    <h2>Disclaimer</h2>
+    <p>I (the site owner) am not responsible for your poor decision making. Nor am I responsible for anything that happens due to you using this site. Really, just use at your own risk. Also, this site is not to be used for any illicit activities. Users found to be using this site for illegal things will be turned over to law enforcement and/or will result in permanent bans from the site. Now that my ass is covered, have fun.</p>
+    <br /><br />
+    <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Share a Secret</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://beansnet.net/" property="cc:attributionName" rel="cc:attributionURL">Ben Healey</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/bentastic27/ShareASecret.git" rel="dct:source">https://github.com/bentastic27/ShareASecret.git</a>.
+    <br /><br />
+    Background pattern courtesy of <a href="http://www.squidfingers.com/">www.squidfingers.com</a>
+{% endblock %}
