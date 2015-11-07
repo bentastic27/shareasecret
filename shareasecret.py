@@ -1,4 +1,4 @@
-from flask import Flask, g, render_template, flash, get_flashed_messages, redirect, session
+from flask import Flask, g, render_template, flash, get_flashed_messages, redirect, session, request
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask.ext.wtf import Form
 from wtforms import TextAreaField, PasswordField, SubmitField
@@ -107,7 +107,7 @@ def index():
 def confirmation_page(secret_id=None):
     if secret_id is None:
         return redirect('/')
-    return render_template('confirm.html', secret_id=secret_id)
+    return render_template('confirm.html', secret_id=secret_id, url=request.url_root)
 
 
 @app.route('/secret/')

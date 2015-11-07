@@ -2,6 +2,6 @@
 {% block my_content %}
     <h1>secret saved</h1>
     <p>Give this url to whomever you are sharing with.</p>
-    <pre>http://localhost:5000/secret/{{ secret_id }}</pre>
+    <pre>{{ url }}secret/{{ secret_id }}</pre>
     <p>The secret will be deleted upon accessing the aforementioned url or after 7 days have elapsed.</p>
 {% endblock %}
