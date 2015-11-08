@@ -15,3 +15,5 @@ http://creativecommons.org/licenses/by-sa/4.0/
 # Author
 
 Ben Healey at http://www.beansnet.net/
+
+Inspired by https://github.com/onetimesecret/onetimesecret
